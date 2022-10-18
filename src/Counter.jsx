@@ -11,7 +11,9 @@ const Counter = () => {
     }
     return (
         <div>
-            <button onClick={inc} className="btn">+</button>
+            <button onClick={() => {
+                setCounter(counter + 1);
+            }} className="btn">+</button>
             <div className='counter'>{counter}</div>
             <button onClick={dec} className="btn">-</button>
         </div>
